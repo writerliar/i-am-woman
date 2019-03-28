@@ -20,11 +20,17 @@
         <symbol id="back" viewBox="0 0 10.438 18.376">
             <path d="M9.938 1.202L1.923 9.188l8.015 7.985" fill="none" stroke="#91171d"/>
         </symbol>
+        <symbol id="back-dark" viewBox="0 0 7.031 13">
+            <path data-name="Фигура 16 копия" d="M6.525 1.18L1.832 6.51l4.693 5.33" fill="none" stroke="#342b2b"/>
+        </symbol>
+        <symbol id="like" viewBox="0 0 51.562 48">
+            <path d="M51.481 14.309c-.753-8.3-6.619-14.316-13.96-14.316a13.873 13.873 0 0 0-11.884 6.858 13.37 13.37 0 0 0-11.6-6.859C6.694-.008.827 6.011.075 14.308a14.779 14.779 0 0 0 .438 5.441 23.341 23.341 0 0 0 7.142 11.93l17.97 16.326L43.904 31.68a23.344 23.344 0 0 0 7.142-11.932 14.813 14.813 0 0 0 .435-5.439zm-2.371 4.985A21.347 21.347 0 0 1 42.581 30.2L25.637 45.334 8.988 30.208a21.361 21.361 0 0 1-6.543-10.915 12.913 12.913 0 0 1-.413-4.669l.015-.1C2.692 7.255 7.732 1.978 14.034 1.978a11.629 11.629 0 0 1 10.684 7.464l.914 2.168.914-2.168a11.984 11.984 0 0 1 10.98-7.463c6.3 0 11.342 5.277 12 12.64a12.9 12.9 0 0 1-.412 4.675z" fill-rule="evenodd"/>
+        </symbol>
     </svg>
     <header class="header">
         <h1 class="visually-hidden">Интернет-магазин женской одежды</h1>
         <button class="toggle-menu" id="toggle">
-            <div class="burger"></div>
+            <span class="burger"></span>
             <span class="visually-hidden">Нажмите, чтобы изучить меню</span>
         </button>
         <section class="menu-hidden">
@@ -216,7 +222,7 @@
                                 </svg>
                             </button> <span class="toggle-current">01</span> / <span class="toggle-max">3</span>
                             <button class="toggle-button toggle-next">
-                            <svg class="back" width="10" height="18">
+                            <svg class="next" width="10" height="18">
                                 <use xlink:href="#back"></use>
                             </svg>
                         </button>
@@ -257,8 +263,8 @@
             </div>
         </div>
         <section class="new-arrivals">
-            <div class="inner-container">
-                <h2 class="new-arrivals-title">Новые поступления</h2>
+            <div class="container inner-container">
+                <h2 class="title">Новые поступления</h2>
                 <ul class="new-arrivals-list">
                     <li class="new-arrivals-item">
                         <a href="#" class="new-arrivals-link new-arrivals-link-current">Платья</a>
@@ -274,26 +280,98 @@
                 <ul class="new-catalog">
                     <li class="new-catalog-item">
                         <a href="#" class="new-catalog-link">
-                            <img src="" alt="" class="catalog-image">
-                            <button class="like"></button>
-                            <button class="more"></button>
+                            <img src="img/catalog-1.jpg" alt="Платье - боди" class="catalog-image" width="350" height="510">
                         </a>
-                        <p class="catalog-name-wrapper">
-                        <h3 class="catalog-item-name">Платье - боди</h3>
-                        <p class="price catalog-price">11 700 рублей</p>
-                        </p>
+
+                        <button class="new-catalog-button like">
+                            <svg class="like" width="21" height="27">
+                                <use xlink:href="#like"></use>
+                            </svg>
+                        </button>
+                        <div class="new-catalog-button toggle-img">
+                            <button class="toggle-button toggle-back dark">
+                                <svg class="back" width="7.031" height="13">
+                                    <use xlink:href="#back-dark"></use>
+                                </svg>
+                            </button>
+                            <span class="separate"></span>
+                            <button class="toggle-button toggle-next dark">
+                                <svg class="next" width="7.031" height="13">
+                                    <use xlink:href="#back-dark"></use>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="catalog-name-wrapper">
+                            <h3 class="catalog-item-name">Платье - боди</h3>
+                            <p class="price catalog-price">11 700 рублей</p>
+                        </div>
+                    </li>
+                    <li class="new-catalog-item">
+                        <a href="#" class="new-catalog-link">
+                            <img src="img/catalog-2.jpg" alt="Этническое платье" class="catalog-image" width="350" height="510">
+                        </a>
+                        <button class="new-catalog-button like">
+                            <svg class="like" width="21" height="27">
+                                <use xlink:href="#like"></use>
+                            </svg>
+                        </button>
+                        <div class="new-catalog-button toggle-img">
+                            <button class="toggle-button toggle-back dark">
+                                <svg class="back" width="7.031" height="13">
+                                    <use xlink:href="#back-dark"></use>
+                                </svg>
+                            </button>
+                            <span class="separate"></span>
+                            <button class="toggle-button toggle-next dark">
+                                <svg class="next" width="7.031" height="13">
+                                    <use xlink:href="#back-dark"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="catalog-name-wrapper">
+                            <h3 class="catalog-item-name">Этническое платье</h3>
+                            <p class="price catalog-price">7 800 рублей</p>
+                        </div>
+                    </li>
+                    <li class="new-catalog-item">
+                        <a href="#" class="new-catalog-link">
+                            <img src="img/catalog-3.jpg" alt="Шелковое платье с принтом" class="catalog-image" width="350" height="510">
+                        </a>
+                        <button class="new-catalog-button like">
+                            <svg class="like" width="21" height="27">
+                                <use xlink:href="#like"></use>
+                            </svg>
+                        </button>
+                        <div class="new-catalog-button toggle-img">
+                            <button class="toggle-button toggle-back dark">
+                                <svg class="back" width="7.031" height="13">
+                                    <use xlink:href="#back-dark"></use>
+                                </svg>
+                            </button>
+                            <span class="separate"></span>
+                            <button class="toggle-button toggle-next dark">
+                                <svg class="next" width="7.031" height="13">
+                                    <use xlink:href="#back-dark"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="catalog-name-wrapper">
+                            <h3 class="catalog-item-name">Шелковое платье с принтом</h3>
+                            <p class="price catalog-price">4 800 рублей</p>
+                        </div>
                     </li>
                 </ul>
 
-                <a href="#" class="show-all">Смотреть все</a>
+                <a href="#" class="show-all center">Смотреть все</a>
             </div>
 
             <ul class="pagination">
                 <li class="pagination-item pagination-item-current">
-                    <a href="#sale" class="pagination-link pagination-link-current">01</a>
+                    <a href="#sale" class="pagination-link pagination-link-current">02</a>
                 </li>
                 <li class="pagination-item">
-                    <a href="#new" class="pagination-link">02</a>
+                    <a href="#new" class="pagination-link">01</a>
                 </li>
                 <li class="pagination-item">
                     <a href="#blog" class="pagination-link">04</a>
@@ -305,6 +383,98 @@
                     <a href="#footer" class="pagination-link">06</a>
                 </li>
             </ul>
+        </section>
+
+        <section class="about-brand">
+            <div class="container inner-container">
+                <h2 class="title brand-title">О бренде</h2>
+                    <div class="brand-wrapper brand-wrapper-up">
+                        <img class="brand-img" src="img/brand-1.jpg" alt="" width="500" height="713">
+                        <div class="brand-text-wrapper brand-text-wrapper-up">
+                            <p>Концепция «свободной женщины» была придумана и создана основателем и дизайнером Кристиной Беккер на нальном этапе воплощения ее в реальность.</p>
+                            <p>Идея разработки свободных кроем моделей с яркими дизайнерскими акцентами составляет основу бренда, которая получила настоящий успех и имиджевую</p>
+                        </div>
+                    </div>
+                    <div class="brand-wrapper brand-wrapper-down">
+                        <img class="brand-img" src="img/brand-2.jpg" alt="" width="500" height="671">
+                        <div class="brand-text-wrapper brand-text-wrapper-down">
+                            <p>Ключевыми моделями бренда I AM WOMEN стали рубашки и брюки с безупречной посадкой; а также платья, подчеркивающие женсвенные формы и жилеты, вписывающиеся в любой гардероб своременой женщины. Каждая модель сохраняет свою актуальность в течение нескольких сезонов.</p>
+                        </div>
+                    </div>
+            </div>
+            <ul class="pagination">
+                <li class="pagination-item pagination-item-current">
+                    <a href="#sale" class="pagination-link pagination-link-current">03</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="#new" class="pagination-link">02</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="#blog" class="pagination-link">01</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="#subscribe" class="pagination-link">05</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="#footer" class="pagination-link">06</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="blog">
+            <div class="title-wrapper">
+                <h2 class="title title-blog">Блог</h2>
+                <div class="blog-slide-status">
+                    <p class="status-text">
+                        <span class="slide-now">03/</span><span class="slide-max">12</span>
+                    </p>
+                </div>
+            </div>
+
+            <ul class="blog-list">
+                <li class="blog-list-item">
+                    <article class="blog-preview">
+                        <a href="#" class="blog-link">
+                            <a href="#" class="hashtag">#</a>
+                            <img src="img/blog-1.jpg" alt="" class="blog-image" width="401" height="618">
+                            <h3 class="post-title">Лучший выбор: костюмы’18</h3>
+                            <p class="post-introduction">Проще говоря, выбирайте более светлые и более темные оттенки одного цвета, в конкретном случае — родственные фиолетовому. Такой образ может легко вписаться в рамки повседневной жизни</p>
+                        </a>
+                    </article>
+                </li>
+                <li class="blog-list-item">
+                    <article class="blog-preview">
+                        <a href="#" class="blog-link">
+                            <a href="#" class="hashtag">#новости</a>
+                            <img src="img/blog-2.jpg" alt="" class="blog-image" width="401" height="618">
+                            <h3 class="post-title">Аксессуары осень — зима ‘18</h3>
+                            <p class="post-introduction">Аксессуары являются важнейшим частью для создания целостного образа. Правильно подобранные украшения помогут сделать лук более гармоничным и стильным, ну а неправильно — испортят ваш лук</p>
+                        </a>
+                    </article>
+                </li>
+                <li class="blog-list-item">
+                    <article class="blog-preview">
+                        <a href="#" class="blog-link">
+                            <a href="#" class="hashtag">#советы</a>
+                            <img src="img/blog-3.jpg" alt="" class="blog-image" width="401" height="618">
+                            <h3 class="post-title">3 крутых образа для офиса</h3>
+                            <p class="post-introduction">Кому-то нравится строгий стиль в одежде, а кому-то приходится его придерживаться из-за офисного дресс-кода. Так или иначе, не стоит превращать деловой стиль в скучный и консервативный</p>
+                        </a>
+                    </article>
+                </li>
+                <li class="blog-list-item">
+                    <article class="blog-preview">
+                        <a href="#" class="blog-link">
+                            <a href="#" class="hashtag">#тенденции</a>
+                            <img src="img/blog-4.jpg" alt="" class="blog-image" width="401" height="618">
+                            <h3 class="post-title">С чем носить ультрафиолет?</h3>
+                            <p class="post-introduction">Уже не первый сезон монохромные образы являются одной из главных тенденций. Дизайнеры и стилисты призывают подбирать вещи в рамках одного сектора цветового круга</p>
+                        </a>
+                    </article>
+                </li>
+            </ul>
+
+            <a href="#" class="show-all center blog">Перейти в блог</a>
         </section>
     </main>
 

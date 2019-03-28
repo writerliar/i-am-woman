@@ -1,3 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="23" viewBox="0 0 26 23">
-  <image id="like_копия_2" data-name="like копия 2" width="26" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAXCAYAAAAV1F8QAAABo0lEQVRIibXVy6uNYRTH8Y9NDESdo4g/QEaKIwNJHWTIzMBEkYGJlJIUYyP3/AmnlDKgKCaSIsktJi4TxcAlZeJ+9Gi9efde7+vszd7feiZr/db6vc/tffQwH2dxHy9jPMEVrO0VYwOu4WlNX2rPRK9GNuEjbmAHFsfYjAuYxuFa4YmITWFjTV9qb+FD9OxiIooONX1BsC40O3EEn7Eyqf5wMPQT9eBrnErSzJooLmNJymZO4k0V3YO3SdLOpWjQL2UJdxftTZweoHARFqRoO+eKRwdjuN4qy7zHpxRt5yrGi9Hc2KNRUXrPKUY/sHSERsuKRzF6h8mUHh6T4WEfno3Q6Hl4mIdv2JYk/0/p+TU8fnMgLuGwmY7eXdzBoyEaPcbtFMVsvMDdlBmce7E3naqyU2tRjvlyzMKrAW9/xVj826peP5Oih4uxiStSpp1V+I7zrYoWqvdmS3O6i+2hPZYyfbI/Guz9i/xoaHalzIBsjUbHG8qmYrnWp8w/Ul7SL7hcKy9Ht7w15V82I+WE9cs4HsYVWBhFq4c1kyYe9MxsZvAL7JxZ1+pQy/MAAAAASUVORK5CYII="/>
+<svg xmlns="http://www.w3.org/2000/svg" width="51.562" height="48" viewBox="0 0 51.562 48">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Forma_1" data-name="Forma 1" class="cls-1" d="M51.7,14.309c-0.753-8.3-6.619-14.316-13.96-14.316A13.873,13.873,0,0,0,25.856,6.851a13.37,13.37,0,0,0-11.6-6.859C6.913-.008,1.046,6.011.294,14.308a14.779,14.779,0,0,0,.438,5.441A23.341,23.341,0,0,0,7.874,31.679l17.97,16.326L44.123,31.68a23.344,23.344,0,0,0,7.142-11.932A14.813,14.813,0,0,0,51.7,14.309Zm-2.371,4.985A21.347,21.347,0,0,1,42.8,30.2L25.856,45.334,9.207,30.208A21.361,21.361,0,0,1,2.664,19.293a12.913,12.913,0,0,1-.413-4.669l0.015-.1C2.911,7.255,7.951,1.978,14.253,1.978A11.629,11.629,0,0,1,24.937,9.442l0.914,2.168,0.914-2.168a11.984,11.984,0,0,1,10.98-7.463c6.3,0,11.342,5.277,12,12.64A12.9,12.9,0,0,1,49.333,19.294Z" transform="translate(-0.219)"/>
 </svg>
