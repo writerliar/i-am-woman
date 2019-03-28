@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>I am woman</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <svg style="display: none;">
+        <symbol id="search-icon" viewBox="0 0 799 800">
+            <path d="M792.778 759.2L598.4 564.789a339.764 339.764 0 0 0 83.711-223.681C682.108 152.905 529.05 0 341.054 0 152.88 0 0 153.082 0 341.108s153.057 341.11 341.054 341.11A339.641 339.641 0 0 0 564.7 598.492L759.08 792.9a24.1 24.1 0 0 0 16.849 7.1 23.361 23.361 0 0 0 16.849-7.1 23.986 23.986 0 0 0 0-33.7zM47.708 341.108c0-161.773 131.6-293.214 293.168-293.214 161.749 0 293.169 131.618 293.169 293.214S502.625 634.5 340.876 634.5c-161.57 0-293.168-131.617-293.168-293.392z" fill-rule="evenodd"/>
+        </symbol>
+        <symbol id="avatar-icon" viewBox="0 0 679.719 800">
+            <path d="M337.319 431.062h5.3c48.536-.828 87.8-17.892 116.785-50.528 63.776-71.9 53.175-195.154 52.015-206.916-4.141-88.3-45.886-130.545-80.342-150.259C405.403 8.615 375.419.663 341.958 0h-2.816c-18.388 0-54.5 2.982-89.121 22.7-34.787 19.714-77.195 61.959-81.336 150.922-1.16 11.762-11.761 135.017 52.015 206.916 28.824 32.632 68.083 49.696 116.619 50.524zm-124.4-253.303c0-.5.166-.993.166-1.325C218.546 57.652 302.864 44.9 338.977 44.9h1.987c44.727.994 120.761 19.217 125.9 131.539a3.221 3.221 0 0 0 .166 1.325c.165 1.16 11.761 113.813-40.916 173.121-20.873 23.525-48.7 35.121-85.311 35.452h-1.657c-36.444-.331-64.439-11.927-85.145-35.452-52.517-58.985-41.253-172.132-41.082-173.126zm467.468 457.735V635c0-1.325-.165-2.65-.165-4.142-.994-32.8-3.148-109.5-75.041-134.023-.5-.166-1.16-.332-1.656-.5-74.71-19.052-136.831-62.125-137.493-62.622a22.359 22.359 0 0 0-25.676 36.612c2.816 1.988 68.746 47.877 151.241 69.083 38.6 13.75 42.9 55 44.064 92.773a33.191 33.191 0 0 0 .166 4.141c.165 14.91-.828 37.938-3.479 51.191-26.836 15.241-132.025 67.922-292.046 67.922-159.359 0-265.211-52.846-292.212-68.087-2.651-13.254-3.81-36.282-3.479-51.192 0-1.325.166-2.65.166-4.141 1.16-37.772 5.466-79.023 44.064-92.773 82.495-21.2 148.425-67.261 151.242-69.083a22.359 22.359 0 0 0-25.677-36.611c-.662.5-62.451 43.569-137.492 62.621-.663.166-1.16.331-1.657.5C3.363 521.351 1.209 598.054.219 630.689a33.2 33.2 0 0 1-.166 4.142v.5c-.169 8.611-.334 52.845 8.446 75.044a21.246 21.246 0 0 0 8.614 10.436C22.082 724.125 141.187 800 340.468 800s318.385-76.041 323.351-79.189a22.166 22.166 0 0 0 8.614-10.436c8.286-22.034 8.12-66.267 7.954-74.881z" fill-rule="evenodd"/>
+        </symbol>
+        <symbol id="bag-icon" viewBox="0 0 640 800">
+            <path d="M639.837 691.534l-45.785-515.828a22.04 22.04 0 0 0-21.911-20.123h-94.185C476.647 69.53 406.337 0 320 0S163.352 69.53 162.044 155.583H67.859a21.925 21.925 0 0 0-21.911 20.123L.163 691.534c0 .654-.163 1.309-.163 1.963C0 752.229 53.8 800 120.02 800h399.96C586.2 800 640 752.229 640 693.5a7.945 7.945 0 0 0-.163-1.966zM320 44.172a113.952 113.952 0 0 1 113.807 111.411H206.193A113.952 113.952 0 0 1 320 44.172zm199.98 711.656H120.02c-41.532 0-75.217-27.484-75.871-61.35l43.822-494.56h73.909v67.076a22.075 22.075 0 1 0 44.149 0v-67.076h227.778v67.076a22.075 22.075 0 1 0 44.149 0v-67.076h73.909l43.986 494.56c-.651 33.866-34.502 61.35-75.871 61.35z" fill-rule="evenodd"/>
+        </symbol>
+        <symbol id="back" viewBox="0 0 10.438 18.376">
+            <path d="M9.938 1.202L1.923 9.188l8.015 7.985" fill="none" stroke="#91171d"/>
+        </symbol>
+    </svg>
+    <header class="header">
+        <h1 class="visually-hidden">Интернет-магазин женской одежды</h1>
+        <button class="toggle-menu" id="toggle">
+            <div class="burger"></div>
+            <span class="visually-hidden">Нажмите, чтобы изучить меню</span>
+        </button>
+        <section class="menu-hidden">
+            <div class="container-special menu-hidden-wrapper">
+                <button class="close">
+                    <span class="visually-hidden">Закрыть специальное меню</span>
+                </button>
+                <h2 class="menu-title">Каталог</h2>
+                <div class="list-wrapper">
+                    <ul class="menu-list">
+                        <li class="menu-list-item">
+                            <a href="#" class="menu-link">Пальто</a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a href="#" class="menu-link">Жилеты и жакеты</a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a href="#" class="menu-link">Костюмы</a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a href="#" class="menu-link">Трикотаж</a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a href="#" class="menu-link">Платья</a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a href="#" class="menu-link">Блузы и топы</a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a href="#" class="menu-link">Футболки</a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a href="#" class="menu-link">Юбки и брюки</a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a href="#" class="menu-link">Аксессуары</a>
+                        </li>
+                    </ul>
+
+                    <nav class="main-navigation">
+                        <ul class="menu-list">
+                            <li class="menu-list-item">
+                                <a href="#" class="menu-link">О бренде</a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a href="#" class="menu-link">Оферта</a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a href="#" class="menu-link">Оплата и доставка</a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a href="#" class="menu-link">Возврат</a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a href="#" class="menu-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <ul class="menu-list">
+                        <li class="menu-list-item">
+                            <a href="#" class="menu-link">Sale</a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a href="#" class="menu-link">New</a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a href="#" class="menu-link">Looks</a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a href="#" class="menu-link">Блог</a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a href="#" class="menu-link">Streetstyle</a>
+                        </li>
+                    </ul>
+
+                    <ul class="menu-list">
+                        <li class="menu-list-item">
+                            <form class="search-form" action="echo.htmlacademy.ru" method="get">
+                                <label class="visually-hidden" for="search">Найти на сайте</label>
+                                <input class="search-input" type="search" name="search_form" id="search" placeholder="Найти на сайте">
+                            </form>
+                        </li>
+                        <li class="menu-list-item">
+                            <a href="#" class="menu-link">Войти в личный кабинет</a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a href="#" class="menu-link">Отзывы</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu-overlay"></div>
+        </section>
+
+        <div class="container">
+            <div class="header-wrapper">
+
+                <a href="#" class="logo">
+                    <img src="img/logo.png" alt="Логотип I am woman, Москва" class="logo-img" width="156" height="34">
+                </a>
+                <ul class="user-menu">
+                    <li class="user-menu-item">
+                        <a href="#" class="user-menu-link">
+                            <svg class="user-menu-icon" width="20" height="20">
+                                <use xlink:href="#search-icon"></use>
+                            </svg>
+                            <span class="visually-hidden">Поиск</span>
+                        </a>
+                    </li>
+                    <li class="user-menu-item">
+                        <a href="#" class="user-menu-link">
+                            <svg class="user-menu-icon" width="17" height="20">
+                                <use xlink:href="#avatar-icon"></use>
+                            </svg>
+                            <span class="visually-hidden">Войти в личный кабинет</span>
+                        </a>
+                    </li>
+                    <li class="user-menu-item">
+                        <a href="#" class="user-menu-link">
+                            <svg class="user-menu-icon" width="17" height="20">
+                                <use xlink:href="#bag-icon"></use>
+                            </svg>
+                            <span class="visually-hidden">Моя корзина</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="sale" id="#sale">
+            <div class="sale-title-wrapper">
+                <h2 class="sale-title">Распродажа  SS’18</h2>
+            </div>
+
+            <div class="column container">
+                <div class="collection">
+                    <div class="collection-wrapper">
+                        <h2 class="collection-title">Новая<br> круизная коллекция ‘<span class="num-shadow">19</span></h2>
+                        <a href="#" class="catalog-link">Перейти в каталог</a>
+                    </div>
+                    <ul class="header-social">
+                        <li class="social-item">
+                            <a href="#" class="social-link">Facebook</a>
+                        </li>
+                        <li class="social-item">
+                            <a href="#" class="social-link">Youtube</a>
+                        </li>
+                        <li class="social-item">
+                            <a href="#" class="social-link">Vkontakte</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="slider">
+                    <div class="slide-wrapper">
+                        <div class="slide slide-1">
+                            <img src="img/slide-1.jpg" alt="Хлопковое платье в полоску, 9 900 рублей" class="slide-image slide-image-1" width="605" height="680">
+                            <div class="slide-name slide-name-1">
+                                <h3 class="slide-title">Хлопковое платье в полоску</h3>
+                                <p class="price">9 900 рублей</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-wrapper">
+                        <div class="slide slide-2">
+                            <img src="img/slide-2.jpg" alt="Спортивный желтый костюм, 9 900 рублей" class="slide-image slide-image-2" width="605" height="680">
+                            <div class="slide-name slide-name-2">
+                                <h3 class="slide-title">Спортивный желтый костюм</h3>
+                                <p class="price">9 900 рублей</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-wrapper">
+                        <div class="slide slide-3">
+                            <img src="img/slide-3.jpg" alt="Платье — халат со стразами, 9 900 рублей" class="slide-image slide-image-3" width="605" height="680">
+                            <div class="slide-name slide-name-3">
+                                <h3 class="slide-title">Платье — халат со стразами</h3>
+                                <p class="price">9 900 рублей</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="toggle-wrapper">
+                        <p class="slide-toggle">
+                            <button class="toggle-button toggle-back">
+                                <svg class="back" width="10" height="18">
+                                    <use xlink:href="#back"></use>
+                                </svg>
+                            </button> <span class="toggle-current">01</span> / <span class="toggle-max">3</span>
+                            <button class="toggle-button toggle-next">
+                            <svg class="back" width="10" height="18">
+                                <use xlink:href="#back"></use>
+                            </svg>
+                        </button>
+                        </p>
+                        <a href="#" class="show-all">Смотреть все</a>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="pagination">
+                <li class="pagination-item pagination-item-current">
+                    <a href="#sale" class="pagination-link pagination-link-current">01</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="#new" class="pagination-link">02</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="#blog" class="pagination-link">04</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="#subscribe" class="pagination-link">05</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="#footer" class="pagination-link">06</a>
+                </li>
+            </ul>
+        </section>
+        <div class="slide-background slide-background-1">
+            <div class="slide-back-overlay">
+            </div>
+        </div>
+        <div class="slide-background slide-background-2">
+            <div class="slide-back-overlay">
+            </div>
+        </div>
+        <div class="slide-background slide-background-3">
+            <div class="slide-back-overlay">
+            </div>
+        </div>
+        <section class="new-arrivals">
+            <h2 class="new-arrivals-title">Новые поступления</h2>
+            <ul class="new-arrivals-list">
+                <li class="new-arrivals-item">
+                    <a href="#" class="new-arrivals-link new-arrivals-link-current">Платья</a>
+                </li>
+                <li class="new-arrivals-item">
+                    <a href="#" class="new-arrivals-link">Блузы и топы</a>
+                </li>
+                <li class="new-arrivals-item">
+                    <a href="#" class="new-arrivals-link">Брюки и юбки</a>
+                </li>
+            </ul>
+
+            <ul class="new-catalog">
+                <li class="new-catalog-item">
+                    <a href="#" class="new-catalog-link">
+                        <img src="" alt="" class="catalog-image">
+                        <button class="like"></button>
+                        <button class="more"></button>
+                    </a>
+                    <p class="catalog-name-wrapper">
+                        <h3 class="catalog-item-name">Платье - боди</h3>
+                        <p class="price catalog-price">11 700 рублей</p>
+                    </p>
+                </li>
+            </ul>
+
+            <a href="#" class="show-all">Смотреть все</a>
+
+            <ul class="pagination">
+                <li class="pagination-item pagination-item-current">
+                    <a href="#sale" class="pagination-link pagination-link-current">01</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="#new" class="pagination-link">02</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="#blog" class="pagination-link">04</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="#subscribe" class="pagination-link">05</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="#footer" class="pagination-link">06</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

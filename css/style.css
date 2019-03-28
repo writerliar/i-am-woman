@@ -1,0 +1,649 @@
+@font-face {
+    font-family: "Cormorant";
+    src: url("../fonts/cormorant/Cormorant.woff"),
+    url("../fonts/cormorant/Cormorant.woff2"),
+    url("../fonts/cormorant/Cormorant.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "CormorantSemi";
+    src: url("../fonts/cormorant/Cormorantsemibold.woff"),
+    url("../fonts/cormorant/Cormorantsemibold.woff2"),
+    url("../fonts/cormorant/Cormorantsemibold.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "CormorantMedium";
+    src: url("../fonts/cormorant/Cormorantsemibold.woff"),
+    url("../fonts/cormorant/Cormorantsemibold.woff2"),
+    url("../fonts/cormorant/Cormorantsemibold.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "CormorantLight";
+    src: url("../fonts/cormorant/Cormorantlight.woff"),
+    url("../fonts/cormorant/Cormorantlight.woff2"),
+    url("../fonts/cormorant/Cormorantlight.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/openSans/opensans.woff"),
+    url("../fonts/openSans/opensans.woff2"),
+    url("../fonts/openSans/opensans.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "OpenSansBold";
+    src: url("../fonts/openSans/opensanssemibold.woff"),
+    url("../fonts/openSans/opensanssemibold.woff2"),
+    url("../fonts/openSans/opensanssemibold.ttf");
+    font-weight: 600;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Cormorant", "Times New Roman", serif;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #342b2b;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1180px;
+}
+.inner-container {
+    padding: 0 37px;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/*header*/
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.toggle-menu {
+    padding: 39px 21px;
+    border: none;
+    background-color: #ece5e1;
+    cursor: pointer;
+}
+
+.burger {
+    position: relative;
+    width: 33px;
+    height: 2px;
+    background-color: #352f2f;
+}
+
+.burger::before,
+.burger::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    background-color: #352f2f;
+}
+
+.burger::before {
+    top: 7px;
+    right: 0;
+}
+
+.burger::after {
+    top: 14px;
+}
+
+.logo {
+    display: block;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-top: 35px;
+    padding-left: 112px;
+    padding-right: 127px;
+}
+
+.user-menu {
+    margin: 0;
+    margin-left: auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 291px;
+}
+
+.menu-hidden {
+    display: none;
+    position: fixed;
+    margin-left: 75px;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/background-menu.jpg);
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*opacity: 0.7;*/
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 75px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(236, 229, 225, 0.7);
+    z-index: 2;
+}
+
+.menu-hidden.show {
+    display: block;
+}
+
+.container-special {
+    width: 1180px;
+    box-sizing: border-box;
+    padding-left: 25px;
+    padding-right: 65px;
+    margin: 0 57px;
+}
+
+.menu-hidden-wrapper {
+    position: relative;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*align-items: center;*/
+    padding-top: 212px;
+    z-index: 3;
+}
+
+.close {
+    position: absolute;
+    top: 50px;
+    right: -33px;
+    padding: 0;
+    width: 21px;
+    height: 21px;
+    background-color: transparent;
+    border: none;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.close::before,
+.close::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 30px;
+    background-color: #342b2b;
+}
+
+.close::before {
+    transform: rotate(45deg);
+}
+
+.close::after {
+    transform: rotate(-45deg);
+}
+
+.list-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.menu-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.menu-title {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    font-family: "CormorantSemi", "Times New Roman", serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #342b2b;
+}
+
+.menu-list-item {
+    margin-bottom: 10px;
+}
+
+.menu-link {
+    display: block;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 0;
+    font-size: 18px;
+    color: #342b2b;
+    border-bottom: 1px solid transparent;
+    box-sizing: border-box;
+}
+
+.menu-link:hover {
+    text-decoration: underline;
+    /*border-bottom: 1px solid;*/
+}
+
+.search-form {
+}
+
+.search-input {
+    width: 284px;
+    padding-top: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px;
+    padding-left: 50px;
+    background-color: transparent;
+    background-image: url("../img/search.svg");
+    background-repeat: no-repeat;
+    background-size: 17px;
+    background-position: 7px;
+    border: none;
+    border-bottom: 1px solid #3c3333;
+}
+
+.search-input::-webkit-input-placeholder {
+    font-family: "CormorantLight", "Times New Roman", serif;
+    font-size: 18px;
+    color: #0b0b0b;
+}
+
+.search-input input::-moz-placeholder {
+    font-family: "CormorantLight", "Times New Roman", serif;
+    font-size: 18px;
+    color: #0b0b0b;
+}
+
+.search-input input:-ms-input-placeholder {
+    font-family: "CormorantLight", "Times New Roman", serif;
+    font-size: 18px;
+    color: #0b0b0b;
+}
+
+.sale {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 160px;
+    height: 100%;
+}
+
+.sale-title-wrapper {
+    position: relative;
+    height: 680px;
+    width: 75px;
+    background-color: #ece5e0;
+}
+
+.sale-title-wrapper.show {
+    height: 100vh;
+    background-color: #decec5;
+}
+
+.sale-title {
+    position: relative;
+    top: 501px;
+    right: 100px;
+    margin: 0;
+    padding: 0;
+    width: 270px;
+    font-family: "CormorantLight", "Times New Roman", serif;
+    font-size: 18px;
+    text-align: right;
+    color: #342b2b;
+    letter-spacing: 1.1px;
+    transform: rotate(-90deg);
+}
+
+.sale-title::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 1px;
+    width: 94px;
+    background-color: #342b2b;
+}
+
+.column {
+    display: flex;
+    /*justify-content: space-between;*/
+}
+
+.collection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 15px;
+    height: 680px;
+}
+
+.collection-wrapper {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.collection-title {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    width: 485px;
+    font-family: "Cormorant", "Times New Roman", serif;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.catalog-link {
+    padding: 3px;
+    font-size: 18px;
+    color: #79100b;
+    border-bottom: 1px solid;
+}
+
+.num-shadow {
+    position: relative;
+}
+
+.num-shadow::after {
+    content: "19";
+    position: absolute;
+    top: -17px;
+    right: -33px;
+    font-size: 177px;
+    line-height: 0;
+    color: #ece5e1;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.header-social {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.social-item {
+    position: relative;
+    margin-right: 10px;
+}
+
+.social-item:last-child {
+    margin-right: 0;
+}
+
+.social-item:first-child .social-link {
+    padding-left: 0;
+}
+
+.social-link {
+    position: relative;
+    display: block;
+    padding-left: 37px;
+    font-family: "OpenSans", Arial, sans-serif;
+    font-size: 16px;
+    color: rgba(52, 43, 43, 0.8);
+}
+
+.social-item:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 1px;
+    width: 24px;
+    background-color: #342b2b;
+}
+
+.slide {
+    /*position: absolute;*/
+    width: 605px;
+    height: 680px;
+}
+
+.slide-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.slide-image {
+    display: block;
+    width: 605px;
+    height: 680px;
+}
+
+.slide-2,
+.slide-3 {
+    display: none;
+}
+
+.slide-name {
+    position: absolute;
+    bottom: 76px;
+    left: 50%;
+    padding-top: 20px;
+    padding-right: 42px;
+    padding-bottom: 20px;
+    padding-left: 42px;
+    width: 367px;
+    text-align: center;
+    background-color: rgba(236, 229, 225, 0.8);
+    box-sizing: border-box;
+    transform: translateX(-50%);
+}
+
+.slide-name-2 {
+    padding-left: 35px;
+}
+
+.slide-title {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    font-family: "CormorantSemi", "Times New Roman", serif;
+    font-size: 24px;
+    color: #91161d;
+}
+
+.price {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    font-family: "CormorantSemi", "Times New Roman", serif;
+    font-size: 18px;
+    color: #91161d;
+}
+
+.price::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 110px;
+    height: 1px;
+    width: 72px;
+    background-color: #952226;
+}
+
+.slide-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-bottom: 20px;
+    height: 100%;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.slide-background-1 {
+    background-image: url("../img/slide-back-1.jpg");
+}
+
+.slide-background-2 {
+    display: none;
+    background-image: url("../img/slide-back-2.jpg");
+    background-position-y: -45px;
+}
+
+.slide-background-3 {
+    display: none;
+    background-image: url("../img/slide-back-3.jpg");
+}
+
+.slide-back-overlay {
+    padding-bottom: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(236, 229, 225, 0.8);
+}
+
+.toggle-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    padding-left: 137px;
+    width: 500px;
+    box-sizing: border-box;
+}
+
+.slide-toggle {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 36px;
+    color: #952126;
+}
+
+.toggle-button {
+    background-color: transparent;
+    border: none;
+    color: #952126;
+    cursor: pointer;
+}
+
+.toggle-next {
+    transform: scale(-1, 1);
+}
+
+.toggle-max {
+    position: relative;
+    bottom: -15px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #0b0b0b;
+}
+
+.show-all {
+    margin: 0;
+    padding: 0;
+    font-family: "CormorantLight", "Times New Roman", serif;
+    font-size: 18px;
+    color: #342b2b;
+    border-bottom: 1px solid;
+}
+
+
+
+
+
+.pagination {
+    position: relative;
+    align-self: center;
+    padding: 0;
+    padding-top: 30px;
+    padding-right: 100px;
+    margin: 0;
+    min-height: 313px;
+    list-style: none;
+    text-align: center;
+}
+
+.pagination-item {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.pagination-item-current {
+    margin-bottom: 130px;
+}
+
+.pagination-item-current::after {
+    content: "";
+    position: absolute;
+    top: 27px;
+    left: 50%;
+    width: 1px;
+    height: 94px;
+    background-color: #342b2b;
+}
+
+.pagination-link {
+    display: block;
+    font-family: "OpenSans", Arial, sans-serif;
+    font-size: 12px;
+    color: #342b2b;
+}
+
+.pagination-link-current {
+    font-size: 16px;
+    color: #91171d;
+    font-family: "OpenSansBold", Arial, sans-serif;
+}
