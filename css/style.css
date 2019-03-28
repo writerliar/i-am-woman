@@ -600,10 +600,6 @@ input[type="radio"].visually-hidden {
     border-bottom: 1px solid;
 }
 
-
-
-
-
 .pagination {
     position: relative;
     align-self: center;
@@ -647,3 +643,4 @@ input[type="radio"].visually-hidden {
     color: #91171d;
     font-family: "OpenSansBold", Arial, sans-serif;
 }
+
